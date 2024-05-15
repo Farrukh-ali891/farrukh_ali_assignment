@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #E9F8E5;
+}
+
+.leftSide {
+    /* background-color: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 100vh;
+}
+
+.loginMainImage {
+    display: block;
+    width: 70%;
+}
+
+.rightSide {
+    background-color: white;
+    width: 55%;
+    height: 100%;
+    padding: 1.875rem 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem;
+    box-shadow: -8px 0px 6px 0px rgba(188, 183, 183, 0.75);
+}
+
+.logo {
+    width: 8%;
+}
+
+.mobileMainImage {
+    display: none;
+}
+
+.form {
+    width: 80%;
+}
+
+.topLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title1 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: cursive;
+    letter-spacing: -0.5px;
+    color: rgb(59, 59, 59);
+}
+
+.title2 {
+    margin: 2rem 0 1.5rem;
+    font-size: 1.6rem;
+    color: rgb(59, 59, 59);
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 1.5rem 0 0.6rem 0.4rem;
+    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(76, 76, 76);
+}
+
+.inputField {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding: 10px 0 10px 3rem;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.icons {
+    position: absolute;
+    vertical-align: middle;
+    left: 2%;
+    font-size: 22px !important;
+    font-weight: 300 !important;
+    color: gray;
+}
+
+.signupbtn {
+    width: 100%;
+    background-color: #749459;
+    padding: 16px 0;
+    margin: 2rem 0 1rem;
+    color: white;
+    font-weight: 600;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.signupbtn:hover {
+    background-color: #7a9d5e;
+}
+
+.extra {
+    color: gray;
+    text-align: center;
+    margin: 1.4rem 0 0.6rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.iconCluster {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.socialIcons {
+    background-color: white;
+    margin: 0 1rem;
+    border-radius: 100%;
+    padding: 5px;
+    cursor: pointer;
+    box-shadow: 2px 1px 5px 1px rgba(188, 183, 183, 0.75);
+    border: 0.5px solid gray;
+
+}
+
+.loginLink {
+    color: #749459;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.bottomLine {
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+    color: rgb(76, 76, 76);
+    margin-bottom: 1rem;
+}
+
+.spacer {
+    margin-top: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .leftSide {
+        display: none;
+    }
+
+    .rightSide {
+        width: 100vw;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .mobileTop{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+ 
+
+    .mobileMainImage {
+        display: block;
+        width: 80%;
+    }
+
+
+}
